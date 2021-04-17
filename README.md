@@ -46,18 +46,20 @@ namespace AlexandrinaSoftware.NetworkConsole
 
 Use :
 
-
-class
+namespace YourNameSpace
 {
+    class
+    {
         try
         {
-                .... (do somthing)
+                //.... (do somthing)
         }
         catch(Exception Ex)
         {
                 NetworkConsole.Write(Ex.Message);
                 NetworkConsole.Write(Ex.StackTrace);
                 NetworkConsole.Write(Ex.InnerException.Message);
-                ....(or cutome exception message)
+                //....(or cutome exception message)
         }
+    }
 }
