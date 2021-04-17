@@ -7,7 +7,7 @@ Network Console Application For Catching Android releases Exceptions
 
 add the next static  class to your code
 
-
+####################################
 using MyRetailer.Customers.Global;
 using System;
 using System.Collections.Generic;
@@ -40,12 +40,20 @@ namespace AlexandrinaSoftware.NetworkConsole
 
     }
 }
+################################
 
 
 
+Use :
 
-Use in your code like that
-
+try
 {
-NetworkConsole.Write("<ConsoleMessage>");
+.... (do somthing)
+}
+catch(Exception Ex)
+{
+NetworkConsole.Write(Ex.Message);
+NetworkConsole.Write(Ex.StackTrace);
+NetworkConsole.Write(Ex.InnerException.Message);
+....(or cutome exception message)
 }
