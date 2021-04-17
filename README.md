@@ -8,14 +8,14 @@ Network Console Application For Catching Android releases Exceptions
 add the next static  class to your code
 
 
-using MyRetailer.Customers.Global;
+
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
-using System.Threading.Tasks;
+
 
 namespace AlexandrinaSoftware.NetworkConsole
 {
@@ -46,7 +46,10 @@ namespace AlexandrinaSoftware.NetworkConsole
 
 Use :
 
-namespace YourNameSpace
+
+using System;
+using System.Text;
+namespace YourNameSpace.name
 {
     class
     {
